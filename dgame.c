@@ -6,8 +6,13 @@ int main(void){
 
   int num_1 = 0;
   int num_2 = 0;
+  char name[100];
  
   srand((unsigned)time(NULL));
+
+  printf("What is your name?\n> ");
+  scanf("%s",name);
+  printf("Hello, %s!\n", name);
 
   num_1 = rand() % 6 + 1;;
   num_2 = rand() % 6 + 1;;
